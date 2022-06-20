@@ -15,7 +15,6 @@
     </ul>
 </details>
 
-
 ---
 ### Declaring a string
 ```c++
@@ -35,7 +34,6 @@
 ``` -->
 
 ---
-
 ### Finding the size of a string
 ```c++
     // C++
@@ -52,7 +50,6 @@
     firstName.length() // Returns 6
     lastName.length() // Returns 9
 ``` -->
-
 ---
 ### Getting a substring (part of a string)
 ```c++
@@ -63,7 +60,6 @@
     // Returns "z" --> starts at index 8, str length 1
     lastName.substr(8, 1);
 ```
-
 ---
 ### Comparing strings
 ```c++
@@ -82,7 +78,6 @@
     }
     // .compare is also an option
 ```
-
 ---
 ### Concatenating (joining) two strings
 ```c++
@@ -91,7 +86,6 @@
     string fullName = firstName.append(lastName); 
     string fullNameToo = firstName + lastName;
 ```
-
 ---
 ### Looping through a string and accessing one character at a time
 ```c++
@@ -108,15 +102,36 @@
         cout << c;
     }
 ```
-
 ---
 ### Finding a string in a string
 ```c++
-
+    // C++
+    // use .find method
+    string str = "california";
+    string str2 = "for";
+    if(str.find(str2) != string::npos){
+        cout << "\"" << str2 << "\" found at index " << str.find(str2);
+    }
+    else{
+        cout << "\"" << str2 << "\" not found in " << str;
+    }
 ```
-
-
-
-
-
-
+---
+### Turning a string into an array
+```c++
+    // C++
+    string str = "alexis";
+    const int SIZE = str.length();
+    string strArr[SIZE];
+  
+    // Copies the characters into strArr
+    for(int i = 0; i < SIZE; i++){
+        strArr[i] = str[i];
+    }
+  
+    // Prints out the characters in strArr
+    for(int i = 0; i < SIZE; i++){
+        cout << strArr[i] << ' ';
+    }
+```
+---
