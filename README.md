@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Strings Cheatsheet
+# String Cheatsheet
 
 <details>
     <summary>
@@ -136,7 +135,3 @@
     }
 ```
 ---
-=======
-# strings-cheatsheet
-Prepare your own "Strings Cheatsheet" for the programming language of your choice.
->>>>>>> de03ec8ba875f763ed11cbf5a529f32fc1bb9132
